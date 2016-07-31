@@ -1,4 +1,4 @@
-#include(Pkg.dir("SDE","src", "Schauder.jl"))
+#include(joinpath(dirname(@__FILE__),"..","src", "Schauder.jl"))
 #using Schauder
 using SDE.Schauder
 using Base.Test

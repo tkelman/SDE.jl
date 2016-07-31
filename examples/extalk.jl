@@ -2,7 +2,7 @@ using Winston
 using SDE
 using Diffusion
 using LinProc
-include(Pkg.dir("SDE","src", "misc.jl"))
+include(joinpath(dirname(@__FILE__),"..","src", "misc.jl"))
 
 pic = 1
 function dp(p)

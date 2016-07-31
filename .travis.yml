@@ -1,13 +1,11 @@
-language: cpp
-compiler: 
-    - clang
+language: julia
+julia:
+    - 0.3
+    - 0.4
+    - 0.5
+    - nightly
 notifications:
     email: false
-before_install:
-    - sudo add-apt-repository ppa:staticfloat/julia-deps -y
-    - sudo add-apt-repository ppa:staticfloat/julianightlies -y
-    - sudo apt-get update -qq -y
-    - sudo apt-get install libpcre3-dev julia -y
 script:
     - julia -e 'Pkg.init(); run(`ln -s $(pwd()) $(Pkg.dir())/SDE`); Pkg.resolve()'
     - julia -e 'using SDE; @assert isdefined(:SDE); @assert typeof(SDE) === Module'

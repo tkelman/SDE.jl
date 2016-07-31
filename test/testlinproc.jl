@@ -1,7 +1,7 @@
 using SDE
 using Base.Test
-require(Pkg.dir("SDE","src", "Randm.jl"))
-#include(Pkg.dir("SDE","src", "quad.jl"))
+require(joinpath(dirname(@__FILE__),"..","src", "Randm.jl"))
+#include(joinpath(dirname(@__FILE__),"..","src", "quad.jl"))
 import SDE.eps2
 
 function mc(M::Vector)

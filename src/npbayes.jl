@@ -366,7 +366,7 @@ fe_SigmaB1 = fe_SigmaB1_dot
 fe_SigmaB2 = fe_SigmaB2_dot
 
 #can libsigma be used?
-if find_library(["libsigma"], [Pkg.dir("SDE","deps")]) != ""
+if find_library(["libsigma"], [joinpath(dirname(@__FILE__),"..","deps")]) != ""
 	include("sigma.jl")
  
 end

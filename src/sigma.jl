@@ -1,4 +1,4 @@
-const libsigma = Pkg.dir("SDE", "deps", "libsigma")
+const libsigma = joinpath(dirname(@__FILE__),"..", "deps", "libsigma")
 
 
 #void fe_mu(double *mu, double *y, int N, int L, int K)

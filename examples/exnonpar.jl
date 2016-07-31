@@ -1,7 +1,7 @@
 module ExNonpar
 using SDE
 using SDE.Schauder
-require(Pkg.dir("SDE","src", "SDEPlot.jl"))
+require(joinpath(dirname(@__FILE__),"..","src", "SDEPlot.jl"))
 using SDEPlot
 
 

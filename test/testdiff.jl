@@ -1,4 +1,4 @@
-include(Pkg.dir("SDE","src", "Diffusion.jl"))
+include(joinpath(dirname(@__FILE__),"..","src", "Diffusion.jl"))
 
 using Diffusion
 srand(8)

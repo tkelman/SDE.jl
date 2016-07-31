@@ -2,8 +2,8 @@ module ExBridge
 using Winston
 using SDE
 using LinProc
-include(Pkg.dir("SDE","src", "leading.jl"))
-include(Pkg.dir("SDE","src", "misc.jl"))
+include(joinpath(dirname(@__FILE__),"..","src", "leading.jl"))
+include(joinpath(dirname(@__FILE__),"..","src", "misc.jl"))
 
 d = 2 
 SV = false #save images?
